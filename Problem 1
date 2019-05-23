@@ -1,0 +1,43 @@
+#include<iostream>
+
+using namespace std;
+
+int main()
+{
+	//declarations
+	int num[10];
+	int smallest=0;
+	int largest=0;
+	int temp;
+	double sum=0;
+	double average=0;
+	
+	for(int i=0;i<10;i++)
+	{
+		cout<<"Please enter number "<<i+1<<": "<<endl;
+		cin>>num[i];
+	}
+	
+	smallest=num[0];
+	largest=num[0];
+	
+	for(int i=1;i<10;i++)
+	{
+		temp=num[i];
+		if(temp<smallest)
+			smallest=temp;
+		if(temp>largest)
+			largest=temp;
+	}
+	for(int i=0;i<10;i++)
+	{
+	sum=sum+num[i];
+	}
+	//output
+	cout<<"The largest number is: "<<largest<<endl;
+	cout<<"The smallest number is: "<<smallest<<endl;
+	cout<<"The sum of the numbers is: "<<sum<<endl;
+	cout<<"The average of the numbers is: "<<sum/10<<endl;
+
+return 0;
+}
