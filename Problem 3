@@ -1,0 +1,39 @@
+#include<iostream>
+
+using namespace std;
+
+int main()
+{
+	//declarations
+	int a, b, c, d;
+	char arr[a];
+	//descriptions
+	cout << "Please enter the number of your characters: "; cin >> a;
+	cout << "Please enter the characters to be reversed: ";
+	//for-while loop
+	for (b = 0;b < a; b++)
+	{
+	cin >> arr[b];
+	}
+
+	c = b-1;
+	b = 0;
+	
+	while (b < c)
+	{
+	d = arr[b];
+	arr[b] = arr[c];
+	arr[c] = d;
+	b++;
+	c--;
+	}
+
+	cout << endl;
+	for (b = 0;b < a ;b++)
+	{
+	cout << arr[b] << " ";
+	}
+
+
+return 0;
+}
